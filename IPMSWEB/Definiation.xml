@@ -1,0 +1,129 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Legasuite Defination" parallel="false">
+
+	<test name="Define Zones">
+		<classes>
+		
+			<class name="com.islandpacific.definetestcases.DefineZones" />
+		</classes>
+	</test>
+	
+	
+
+	<test name="Define Territories">
+		<classes>
+			<class name="com.islandpacific.definetestcases.DefineTerritories" />
+		</classes>
+	</test>
+	
+	<test name="Define Regions">
+		<classes>
+			<class name="com.islandpacific.definetestcases.DefineRegions" />
+		</classes>
+	</test>
+	
+	 
+	 <test name="Define District">
+		<classes>
+			<class name="com.islandpacific.definetestcases.DefineDistricts" />
+		</classes>
+	</test>
+	
+	
+	 <test name="Define GTIN Prefixes">
+		<classes>
+			<class name="com.islandpacific.definetestcases.DefineGTINPrefixes" />
+		</classes>
+	</test>
+	
+	
+	 <test name="Define Concepts">
+		<classes>
+			<class name="com.islandpacific.definetestcases.DefineConcepts" />
+		</classes>
+	</test>
+	
+	
+	
+<!-- 
+	  <test name="Define GTIN Prefixes">
+		<classes>
+			<class name="com.islandpacific.definetestcases.DefineGTINPrefixes" />
+		</classes>
+	</test>
+	
+	  <test name="Delete GTIN Prefixes">
+		<classes>
+			<class name="com.islandpacific.deletetestcases.DeleteGTIN" />
+		</classes>
+	</test>
+	
+	<test name=" Delete Define Regions">
+		<classes>
+			<class name="com.islandpacific.deletetestcases.DeleteRegion" />
+		</classes>
+	</test>
+	
+	
+	
+<test name="Delete Define Territories">
+		<classes>
+			<class name="com.islandpacific.deletetestcases.DeleteTerritories" />
+		</classes>
+	</test>
+	
+	
+	
+	<test name="Delete Define Zones ">
+		<classes>
+			<class name="com.islandpacific.deletetestcases.DeleteZones" />
+		</classes>
+	</test>
+	
+	
+	
+	
+	
+
+	
+		
+	 		
+	
+	
+	 
+	 <test name="Define District">
+		<classes>
+			<class name="com.constantDefinations.DefineDistricts" />
+		</classes>
+	</test>
+	
+	
+	
+	 
+	
+		 <test name="Define Concepts">
+		<classes>
+			<class name="com.constantDefinations.DefineConcepts" />
+		</classes>
+	</test>
+	
+	
+	
+	
+	 <test name="Define Sub Department">
+		<classes>
+			<class name="com.constantDefinations.DefineSubDepartment" />
+		</classes>
+	</test>
+	
+	
+	 
+	  <test name="Define GTIN Prefixes">
+		<classes>
+			<class name="com.constantDefinations.DefineGTINPrefixes" />
+		</classes>
+	</test>
+	
+	 -->
+	  	
+</suite>
