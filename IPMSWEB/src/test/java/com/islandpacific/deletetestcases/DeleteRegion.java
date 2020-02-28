@@ -7,8 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
-import com.islandpacific.base.BaseTest;
-import com.islandpacific.testdata.InputDefineRegion;
+import com.islandpacific.ipmsweb.base.BaseTest;
+import com.islandpacific.ipmsweb.testdata.InputDefineRegion;
 
 public class DeleteRegion extends BaseTest {
 	

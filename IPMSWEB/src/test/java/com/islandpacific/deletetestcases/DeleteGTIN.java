@@ -9,8 +9,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
-import com.islandpacific.base.BaseTest;
-import com.islandpacific.util.ScreenRecord;
+import com.islandpacific.ipmsweb.base.BaseTest;
+import com.islandpacific.ipmsweb.util.ScreenRecord;
 
 public class DeleteGTIN extends BaseTest  {
 
@@ -37,7 +37,7 @@ public void GTINDeletion() throws Exception
 	//if( driver.getPageSource().contains(com.islandpacific.testdata.InputDefineGTIN.GTINCode()));
 	WebElement LocateGTIN = driver.findElement(By.xpath("//*[@id=\"_OBJ_N65691\"]"));
 	LocateGTIN.clear();
-	LocateGTIN.sendKeys(com.islandpacific.testdata.InputDefineGTIN.GTINCode());
+	LocateGTIN.sendKeys(com.islandpacific.ipmsweb.testdata.InputDefineGTIN.GTINCode());
 	LocateGTIN.sendKeys(Keys.ENTER);
 	Thread.sleep(3000);
 	WebElement chkboxGTIN = driver.findElement(By.xpath("//*[@id=\"(LIST)CHECK_0\"]/div[2]"));

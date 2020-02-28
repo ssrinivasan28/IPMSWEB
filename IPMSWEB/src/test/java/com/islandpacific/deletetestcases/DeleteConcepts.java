@@ -8,8 +8,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
-import com.islandpacific.base.BaseTest;
-import com.islandpacific.testdata.InputDefineConcepts;
+import com.islandpacific.ipmsweb.base.BaseTest;
+import com.islandpacific.ipmsweb.testdata.InputDefineConcepts;
 
 public class DeleteConcepts extends BaseTest {
 

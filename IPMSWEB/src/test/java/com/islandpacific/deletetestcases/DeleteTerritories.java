@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
-import com.islandpacific.base.BaseTest;
+import com.islandpacific.ipmsweb.base.BaseTest;
 
 public class DeleteTerritories extends BaseTest {
 
@@ -32,7 +32,7 @@ public void DeleteTerritorry() throws Exception
      
 	WebElement txtTerCode= driver.findElement(By.xpath(".//*[@id='_OBJ_N65649']"));
 	txtTerCode.clear();
-	txtTerCode.sendKeys(com.islandpacific.testdata.InputDefineTerritory.Territorycode());
+	txtTerCode.sendKeys(com.islandpacific.ipmsweb.testdata.InputDefineTerritory.Territorycode());
 	test.log(Status.PASS, "Territory Code Entered") ;
 			
 	WebElement BtnTerOK = driver.findElement(By.xpath(".//*[@id='(OK)']"));

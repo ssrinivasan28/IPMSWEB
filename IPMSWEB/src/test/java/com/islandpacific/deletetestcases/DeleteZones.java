@@ -7,8 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
-import com.islandpacific.base.BaseTest;
-import com.islandpacific.testdata.InputDefineZones;
+import com.islandpacific.ipmsweb.base.BaseTest;
+import com.islandpacific.ipmsweb.testdata.InputDefineZones;
 
 public class DeleteZones extends BaseTest  {
 	

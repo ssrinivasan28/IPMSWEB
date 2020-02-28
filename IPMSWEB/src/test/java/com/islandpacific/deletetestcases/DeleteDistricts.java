@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
-import com.islandpacific.base.BaseTest;
-import com.islandpacific.util.ScreenRecord;
+import com.islandpacific.ipmsweb.base.BaseTest;
+import com.islandpacific.ipmsweb.util.ScreenRecord;
 
 public class DeleteDistricts extends BaseTest {
 	
@@ -32,7 +32,7 @@ public void DelDist() throws Exception
         //Entering District  Code into the feild 
         WebElement txtDistCode = driver.findElement(By.xpath(".//*[@id='_OBJ_N65646']"));
         txtDistCode.clear();
-        txtDistCode.sendKeys(com.islandpacific.testdata.InputDefineDistrict.Districtcode());
+        txtDistCode.sendKeys(com.islandpacific.ipmsweb.testdata.InputDefineDistrict.Districtcode());
         WebElement BtnDistOK1 = driver.findElement(By.xpath(".//*[@id='(OK)']"));
         BtnDistOK1.click();
         test.log(Status.PASS, "Proceed OK ");
