@@ -29,7 +29,7 @@ public class PurchaseOrderChange extends BaseTest {
 		menuPoChange.click();	
 		test.log(Status.PASS, "PO Change  Menu Clicked");
 		WebElement txtLocatePO = driver.findElement(By.xpath("//*[@id=\"_OBJ_N65707\"]"));
-		txtLocatePO.sendKeys(com.islandpacific.testdata.purchaseorder.InputPOEntry.BlockOutEntry());
+		txtLocatePO.sendKeys(com.islandpacific.ipmsweb.testdata.purchaseorder.InputPOEntry.BlockOutEntry());
 		test.log(Status.PASS, "PO Details Entered");
 		Thread.sleep(3000);
 	//	txtLocatePO.sendKeys(Keys.ENTER);
@@ -65,7 +65,6 @@ public class PurchaseOrderChange extends BaseTest {
 		WebElement btnExit = driver.findElement(By.xpath("//div[@id='_OBJ_N66151']"));
 		btnExit.click();
 		Thread.sleep(5000);
-		System.out.println("Click");
 		driver.findElement(By.id("TOOLBAR_SPLITBUTTON1")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.id("TOOLBAR_SPLITBUTTON1")).sendKeys(Keys.SHIFT,"X") ;

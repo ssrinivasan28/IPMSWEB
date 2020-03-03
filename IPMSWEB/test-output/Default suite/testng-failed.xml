@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderEntry">
+      <class name="com.islandpacific.ipmsweb.financialmiscoptions.EnterFreightDutyWriteOffs">
         <methods>
+          <include name="defEnterFreightDutyWriteOffs"/>
           <include name="getResult"/>
           <include name="setUp"/>
           <include name="quit"/>
-          <include name="poEntry"/>
           <include name="browserSetup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderEntry -->
+      </class> <!-- com.islandpacific.ipmsweb.financialmiscoptions.EnterFreightDutyWriteOffs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

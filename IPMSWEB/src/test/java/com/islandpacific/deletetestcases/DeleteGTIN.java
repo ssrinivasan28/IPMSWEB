@@ -37,7 +37,7 @@ public void GTINDeletion() throws Exception
 	//if( driver.getPageSource().contains(com.islandpacific.testdata.InputDefineGTIN.GTINCode()));
 	WebElement LocateGTIN = driver.findElement(By.xpath("//*[@id=\"_OBJ_N65691\"]"));
 	LocateGTIN.clear();
-	LocateGTIN.sendKeys(com.islandpacific.ipmsweb.testdata.InputDefineGTIN.GTINCode());
+	LocateGTIN.sendKeys(com.islandpacific.ipmsweb.testdata.constantdefinations.InputDefineGTIN.GTINCode());
 	LocateGTIN.sendKeys(Keys.ENTER);
 	Thread.sleep(3000);
 	WebElement chkboxGTIN = driver.findElement(By.xpath("//*[@id=\"(LIST)CHECK_0\"]/div[2]"));

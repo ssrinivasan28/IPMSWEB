@@ -45,7 +45,7 @@
 		</classes>
 	</test>
 	
-	-->
+--> 
 	
 	 <test name="Purchase Order Entry">
 		<classes>
@@ -60,11 +60,43 @@
 		</classes>
 	</test>
 	
+	
 	 <test name="Purchase Order Change">
 		<classes>
-			<class name="com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderApproval" />
+			<class name="com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderChange" />
 		</classes>
 	</test>
+	
+	 <test name="Match Invoices Inquiry">
+		<classes>
+			<class name="com.islandpacific.ipmsweb.financialsysteminquiries.MatchedInvoicesInquiry" />
+		</classes>
+	</test>
+	
+		
+		
+	 <test name="Enter Freight/Duty Write Offs">
+		<classes>
+			<class name="com.islandpacific.ipmsweb.financialmiscoptions.EnterFreightDutyWriteOffs" />
+		</classes>
+	</test>
+	
+		 <test name="Process Freight/Duty Write Offs">
+		<classes>
+			<class name="com.islandpacific.ipmsweb.financialmiscoptions.ProcessFrightDutyWriteOffs" />
+		</classes>
+	</test>
+	-->	
+		
+	<test name="Receive By Purchase Order">
+		<classes>
+			<class name="com.islandpacific.ipmsweb.test.receiving.ReceiveByPurchaseOrder" />
+		</classes>
+	</test>
+		
+
+		
+		
 	
 	
 	

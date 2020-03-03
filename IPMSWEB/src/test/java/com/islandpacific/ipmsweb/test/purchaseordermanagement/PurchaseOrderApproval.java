@@ -50,7 +50,6 @@ public void defPurchaseOrderApproval() throws Exception
 	Thread.sleep(3000);
 	driver.findElement(By.xpath("//div[@id='(OK)']")).click();
 	Thread.sleep(5000);
-	System.out.println("Click");
 	driver.findElement(By.id("TOOLBAR_SPLITBUTTON1")).click();
 	Thread.sleep(3000);
 	driver.findElement(By.id("TOOLBAR_SPLITBUTTON1")).sendKeys(Keys.SHIFT,"X") ;

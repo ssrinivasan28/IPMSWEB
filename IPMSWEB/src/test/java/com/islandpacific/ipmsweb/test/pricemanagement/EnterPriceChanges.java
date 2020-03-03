@@ -78,11 +78,11 @@ public void enterPC() throws Exception
 		
 		WebElement txtNewBookRetail = driver.findElement(By.xpath("//*[@id=\"_OBJ_N7_0\"]"));
 		txtNewBookRetail.clear();
-		txtNewBookRetail.sendKeys(com.islandpacific.ipmsweb.testdata.InputEnterPriceChanges.BookRetail());
+		txtNewBookRetail.sendKeys(com.islandpacific.ipmsweb.testdata.constantdefinations.InputEnterPriceChanges.BookRetail());
 		Thread.sleep(3000);
 		WebElement txtSplitFactor = driver.findElement(By.xpath("//input[@id='_OBJ_N10_0']"));
 		txtSplitFactor.clear();
-		txtSplitFactor.sendKeys(com.islandpacific.ipmsweb.testdata.InputEnterPriceChanges.SplitFactor());
+		txtSplitFactor.sendKeys(com.islandpacific.ipmsweb.testdata.constantdefinations.InputEnterPriceChanges.SplitFactor());
 		driver.findElement(By.xpath("//div[@id='(OK)']")).click();
 		Thread.sleep(3000);
 		WebElement btnReview = driver.findElement(By.xpath("//div[@id='_OBJ_N68235']"));

@@ -61,6 +61,20 @@ public class BaseTest
 	}
 	
 	
+	
+	public void signoffSession() throws Exception
+	{
+		
+		
+		
+		driver.findElement(By.id("TOOLBAR_SPLITBUTTON1")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.id("TOOLBAR_SPLITBUTTON1")).sendKeys(Keys.SHIFT,"X") ;
+		
+		
+	}
+	
+	
 		
      
     

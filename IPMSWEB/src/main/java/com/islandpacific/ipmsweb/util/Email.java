@@ -94,7 +94,7 @@ public class Email extends BaseTest {
         String host = "smtp.gmail.com";
         String port = "587";
         String mailFrom = "sujitsrinivasan@gmail.com";
-        String password = "Ssr@1990";
+        String password = "Sujit@280590";
  
         // message info
         String mailTo = "ssrinivasan@islandpacific.com";

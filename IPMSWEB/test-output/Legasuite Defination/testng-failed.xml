@@ -1,46 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Legasuite Defination]">
-  <test thread-count="5" name="Purchase Order Entry(failed)">
+  <test thread-count="5" name="Enter Freight/Duty Write Offs(failed)">
     <classes>
-      <class name="com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderEntry">
+      <class name="com.islandpacific.ipmsweb.financialmiscoptions.EnterFreightDutyWriteOffs">
         <methods>
+          <include name="defEnterFreightDutyWriteOffs"/>
           <include name="getResult"/>
           <include name="setUp"/>
           <include name="quit"/>
-          <include name="poEntry"/>
           <include name="browserSetup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderEntry -->
+      </class> <!-- com.islandpacific.ipmsweb.financialmiscoptions.EnterFreightDutyWriteOffs -->
     </classes>
-  </test> <!-- Purchase Order Entry(failed) -->
-  <test thread-count="5" name="Purchase Order Approval (failed)">
-    <classes>
-      <class name="com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderApproval">
-        <methods>
-          <include name="getResult"/>
-          <include name="setUp"/>
-          <include name="quit"/>
-          <include name="poApproval"/>
-          <include name="browserSetup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderApproval -->
-    </classes>
-  </test> <!-- Purchase Order Approval (failed) -->
-  <test thread-count="5" name="Purchase Order Change(failed)">
-    <classes>
-      <class name="com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderApproval">
-        <methods>
-          <include name="getResult"/>
-          <include name="setUp"/>
-          <include name="quit"/>
-          <include name="poApproval"/>
-          <include name="browserSetup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderApproval -->
-    </classes>
-  </test> <!-- Purchase Order Change(failed) -->
+  </test> <!-- Enter Freight/Duty Write Offs(failed) -->
 </suite> <!-- Failed suite [Legasuite Defination] -->

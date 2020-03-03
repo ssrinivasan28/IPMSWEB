@@ -1,44 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="208497" started-at="2020-03-03T10:26:59 IST" finished-at="2020-03-03T10:30:28 IST">
+  <suite name="Legasuite Defination" duration-ms="265422" started-at="2020-03-03T17:01:30 IST" finished-at="2020-03-03T17:05:56 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="208497" started-at="2020-03-03T10:26:59 IST" finished-at="2020-03-03T10:30:28 IST">
-      <class name="com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderChange">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderChange@4d3167f4]" name="setUp" is-config="true" duration-ms="762" started-at="2020-03-03T10:26:59 IST" finished-at="2020-03-03T10:26:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="browserSetup()[pri:0, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderChange@4d3167f4]" name="browserSetup" is-config="true" duration-ms="158145" started-at="2020-03-03T10:26:59 IST" finished-at="2020-03-03T10:29:38 IST">
+    <test name="Purchase Order Entry" duration-ms="102829" started-at="2020-03-03T17:01:30 IST" finished-at="2020-03-03T17:03:13 IST">
+      <class name="com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderEntry">
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderEntry@6121c9d6]" name="browserSetup" is-config="true" duration-ms="69221" started-at="2020-03-03T17:01:30 IST" finished-at="2020-03-03T17:02:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method status="PASS" signature="poChange()[pri:0, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderChange@4d3167f4]" name="poChange" duration-ms="48814" started-at="2020-03-03T10:29:38 IST" finished-at="2020-03-03T10:30:26 IST">
+        <test-method status="PASS" signature="defPurcahseOrderEntry()[pri:1, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderEntry@6121c9d6]" name="defPurcahseOrderEntry" duration-ms="32601" started-at="2020-03-03T17:02:40 IST" finished-at="2020-03-03T17:03:12 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- poChange -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderChange@4d3167f4]" name="getResult" is-config="true" duration-ms="630" started-at="2020-03-03T10:30:26 IST" finished-at="2020-03-03T10:30:27 IST">
+        </test-method> <!-- defPurcahseOrderEntry -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderEntry@6121c9d6]" name="getResult" is-config="true" duration-ms="312" started-at="2020-03-03T17:03:12 IST" finished-at="2020-03-03T17:03:13 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=poChange status=SUCCESS method=PurchaseOrderChange.poChange()[pri:0, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderChange@4d3167f4] output={null}]]]>
+                <![CDATA[[TestResult name=defPurcahseOrderEntry status=SUCCESS method=PurchaseOrderEntry.defPurcahseOrderEntry()[pri:1, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderEntry@6121c9d6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderChange@4d3167f4]" name="quit" is-config="true" duration-ms="856" started-at="2020-03-03T10:30:27 IST" finished-at="2020-03-03T10:30:28 IST">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderEntry@6121c9d6]" name="quit" is-config="true" duration-ms="665" started-at="2020-03-03T17:03:13 IST" finished-at="2020-03-03T17:03:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderChange@4d3167f4]" name="tearDown" is-config="true" duration-ms="6644" started-at="2020-03-03T10:30:28 IST" finished-at="2020-03-03T10:30:35 IST">
+      </class> <!-- com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderEntry -->
+    </test> <!-- Purchase Order Entry -->
+    <test name="Purchase Order Approval " duration-ms="91618" started-at="2020-03-03T17:03:13 IST" finished-at="2020-03-03T17:04:45 IST">
+      <class name="com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderApproval">
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderApproval@1d371b2d]" name="browserSetup" is-config="true" duration-ms="30773" started-at="2020-03-03T17:03:13 IST" finished-at="2020-03-03T17:03:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method status="PASS" signature="defPurchaseOrderApproval()[pri:0, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderApproval@1d371b2d]" name="defPurchaseOrderApproval" duration-ms="60104" started-at="2020-03-03T17:03:44 IST" finished-at="2020-03-03T17:04:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defPurchaseOrderApproval -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderApproval@1d371b2d]" name="getResult" is-config="true" duration-ms="101" started-at="2020-03-03T17:04:44 IST" finished-at="2020-03-03T17:04:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=defPurchaseOrderApproval status=SUCCESS method=PurchaseOrderApproval.defPurchaseOrderApproval()[pri:0, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderApproval@1d371b2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderApproval@1d371b2d]" name="quit" is-config="true" duration-ms="638" started-at="2020-03-03T17:04:44 IST" finished-at="2020-03-03T17:04:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderApproval -->
+    </test> <!-- Purchase Order Approval  -->
+    <test name="Receive By Purchase Order" duration-ms="70946" started-at="2020-03-03T17:04:45 IST" finished-at="2020-03-03T17:05:56 IST">
+      <class name="com.islandpacific.ipmsweb.test.receiving.ReceiveByPurchaseOrder">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.islandpacific.ipmsweb.test.receiving.ReceiveByPurchaseOrder@75881071]" name="setUp" is-config="true" duration-ms="324" started-at="2020-03-03T17:01:30 IST" finished-at="2020-03-03T17:01:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:com.islandpacific.ipmsweb.test.receiving.ReceiveByPurchaseOrder@75881071]" name="browserSetup" is-config="true" duration-ms="35496" started-at="2020-03-03T17:04:45 IST" finished-at="2020-03-03T17:05:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method status="PASS" signature="defReceiveByPurchaseOrder()[pri:0, instance:com.islandpacific.ipmsweb.test.receiving.ReceiveByPurchaseOrder@75881071]" name="defReceiveByPurchaseOrder" duration-ms="30507" started-at="2020-03-03T17:05:20 IST" finished-at="2020-03-03T17:05:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defReceiveByPurchaseOrder -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.islandpacific.ipmsweb.test.receiving.ReceiveByPurchaseOrder@75881071]" name="getResult" is-config="true" duration-ms="4353" started-at="2020-03-03T17:05:51 IST" finished-at="2020-03-03T17:05:55 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=defReceiveByPurchaseOrder status=SUCCESS method=ReceiveByPurchaseOrder.defReceiveByPurchaseOrder()[pri:0, instance:com.islandpacific.ipmsweb.test.receiving.ReceiveByPurchaseOrder@75881071] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.islandpacific.ipmsweb.test.receiving.ReceiveByPurchaseOrder@75881071]" name="quit" is-config="true" duration-ms="588" started-at="2020-03-03T17:05:55 IST" finished-at="2020-03-03T17:05:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.islandpacific.ipmsweb.test.receiving.ReceiveByPurchaseOrder@75881071]" name="tearDown" is-config="true" duration-ms="11151" started-at="2020-03-03T17:05:56 IST" finished-at="2020-03-03T17:06:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderChange -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.islandpacific.ipmsweb.test.receiving.ReceiveByPurchaseOrder -->
+    </test> <!-- Receive By Purchase Order -->
+  </suite> <!-- Legasuite Defination -->
 </testng-results>

@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 import com.islandpacific.ipmsweb.base.BaseTest;
-import com.islandpacific.ipmsweb.testdata.InputDefineConcepts;
+import com.islandpacific.ipmsweb.testdata.constantdefinations.InputDefineConcepts;
 import com.islandpacific.ipmsweb.util.ScreenRecord;
 
 

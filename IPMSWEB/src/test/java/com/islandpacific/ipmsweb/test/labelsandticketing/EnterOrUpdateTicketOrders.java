@@ -62,11 +62,11 @@ public void EnterUpdateTicketOrders() throws Exception
 	test.log(Status.PASS, "Vendor Details Entered");
 	WebElement txtOrderNumber = driver.findElement(By.xpath("//input[@id='_OBJ_N65839']"));
 	txtOrderNumber.clear();
-	txtOrderNumber.sendKeys(com.islandpacific.testdata.purchaseorder.InputPOEntry.BlockOutEntry());
+	txtOrderNumber.sendKeys(com.islandpacific.ipmsweb.testdata.purchaseorder.InputPOEntry.BlockOutEntry());
 	test.log(Status.PASS, "Order Details Entered");
 	WebElement txtSKUDetails =driver.findElement(By.xpath("//input[@id='LSTCOL3_0']")) ;
 	txtSKUDetails.clear();
-	txtSKUDetails.sendKeys(com.islandpacific.testdata.purchaseorder.InputPOEntry.SKUEntry());
+	txtSKUDetails.sendKeys(com.islandpacific.ipmsweb.testdata.purchaseorder.InputPOEntry.SKUEntry());
 	test.log(Status.PASS, "SKU  Details Entered");
 	WebElement txtQty =driver.findElement(By.xpath("//input[@id='LSTCOL4_0']")) ;
 	txtQty.clear();

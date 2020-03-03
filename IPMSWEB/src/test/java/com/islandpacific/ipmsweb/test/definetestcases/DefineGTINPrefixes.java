@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 import com.islandpacific.ipmsweb.base.BaseTest;
-import com.islandpacific.ipmsweb.testdata.InputDefineGTIN;
+import com.islandpacific.ipmsweb.testdata.constantdefinations.InputDefineGTIN;
 import com.islandpacific.ipmsweb.util.ScreenRecord;
 
 
@@ -47,7 +47,7 @@ public class DefineGTINPrefixes extends BaseTest
 		 
 //GTIN code 
 		 WebElement GTINCode = driver.findElement(By.xpath(".//*[@id='_OBJ_N65937']"));
-		 GTINCode.sendKeys(com.islandpacific.ipmsweb.testdata.InputDefineGTIN.GTINCode());
+		 GTINCode.sendKeys(com.islandpacific.ipmsweb.testdata.constantdefinations.InputDefineGTIN.GTINCode());
 	 test.log(Status.PASS, "GTIN Code is entered");
 	//	 System.out.println("GTIN Code" + " " +DefineGTIN.GTINCode()+ " " + "has been entered");
 		

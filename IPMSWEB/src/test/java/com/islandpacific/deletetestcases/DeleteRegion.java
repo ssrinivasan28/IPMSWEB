@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 import com.islandpacific.ipmsweb.base.BaseTest;
-import com.islandpacific.ipmsweb.testdata.InputDefineRegion;
+import com.islandpacific.ipmsweb.testdata.constantdefinations.InputDefineRegion;
 
 public class DeleteRegion extends BaseTest {
 	
