@@ -59,6 +59,7 @@ public class InputPOEntry {
 			FileInputStream fis = new FileInputStream(ScrUser);
 			XSSFWorkbook wb = new XSSFWorkbook(fis);
 			int DepartMentEntrys= (int)wb.getSheetAt(0).getRow(4).getCell(1).getNumericCellValue();
+			
 			String DepartMentEntry = String.valueOf(DepartMentEntrys);
 			return DepartMentEntry;
 			
@@ -72,7 +73,8 @@ public class InputPOEntry {
 			FileInputStream fis = new FileInputStream(ScrUser);
 			XSSFWorkbook wb = new XSSFWorkbook(fis);
 			int SKUEntrys= (int)wb.getSheetAt(0).getRow(5).getCell(1).getNumericCellValue();
-			String SKUEntry = String.valueOf(SKUEntrys);
+			String str = String.format("%010d", SKUEntrys); 
+			String SKUEntry = String.valueOf(str);
 			return SKUEntry;
 			
 }

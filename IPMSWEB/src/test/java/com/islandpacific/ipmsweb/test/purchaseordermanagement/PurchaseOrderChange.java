@@ -13,14 +13,14 @@ import com.islandpacific.ipmsweb.base.BaseTest;
 public class PurchaseOrderChange extends BaseTest {
 
 	@Test
-	public void poChange() throws Exception {
+	public void defPurchaseOrderChange() throws Exception {
 		test = extent.createTest("Purchase Order Chnage");
 		driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
 		WebElement menuMerchandise = driver.findElement(By.xpath("//div[@id='LABEL1_0']"));
 		test.log(Status.PASS, "Merchandise  Menu Clicked");
 		menuMerchandise.click();
 		Thread.sleep(5000);
-		WebElement menuPoManagement = driver.findElement(By.xpath("//div[@id='LABEL4_5']"));
+		WebElement menuPoManagement = driver.findElement(By.xpath("//div[@id='LABEL4_4']"));
 		menuPoManagement.click();
 		test.log(Status.PASS, "PO Management  Menu Clicked");
 		

@@ -51,7 +51,7 @@ public class BaseTest
 	public BaseTest(){
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/islandpacific/util/config.properties");
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/islandpacific/ipmsweb/util/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -74,15 +74,15 @@ public class BaseTest
         extent.attachReporter(htmlReporter);
         
         htmlReporter.loadXMLConfig("./extent-config.xml");
-         
+        String EnvironmentName = prop.getProperty("Env");
         extent.setSystemInfo("OS", System.getProperty("os.name"));
         extent.setSystemInfo("System Name", System.getProperty("user.name"));
-        extent.setSystemInfo("Environment", "IPTSFIL9");
+        extent.setSystemInfo("Environment", EnvironmentName);
         extent.setSystemInfo("User Name", prop.getProperty("username"));
          
         htmlReporter.config().setChartVisibilityOnOpen(true);
-        htmlReporter.config().setDocumentTitle("IWEB Automation");
-        htmlReporter.config().setReportName("IWEB Automation");
+        htmlReporter.config().setDocumentTitle("IPMSWEB Automation");
+        htmlReporter.config().setReportName("IPMSWEB Automation");
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
         htmlReporter.config().setTheme(Theme.STANDARD);
        
@@ -112,8 +112,8 @@ public class BaseTest
     	 String className = getClass().getSimpleName();
          ScreenRecord.startRecording(className);
 		if(browserName.equals("chrome")){
-		  // System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"/drivers/chromedriver.exe");	
-			WebDriverManager.chromedriver().setup();
+		  System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"/drivers/chromedriver.exe");	
+			//WebDriverManager.chromedriver().setup();
 			 driver = new ChromeDriver();
 			// driver= new ChromeDriver();
 
@@ -124,7 +124,7 @@ public class BaseTest
 		 if(browserName.equals("FF")){
 			//System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") +"/drivers/geckodriver.exe");
 			  driver = new FirefoxDriver();
-;			 driver = new FirefoxDriver(); 
+;			
 		}
 		
    
@@ -164,16 +164,140 @@ public class BaseTest
 	//	driver.findElement(By.id("(OK)")).click();
 		
 		
-		WebElement Environment = driver.findElement(By.id("COMBO1"));
-		Environment.sendKeys(Keys.DOWN);
-		Environment.sendKeys(Keys.DOWN);
-		Environment.sendKeys(Keys.DOWN);
-	    Environment.sendKeys(Keys.DOWN);
-		Environment.sendKeys(Keys.DOWN);
-		Environment.sendKeys(Keys.DOWN);
-		Environment.sendKeys(Keys.DOWN);
-		WebElement btnOK = driver.findElement(By.xpath(".//*[@id='(OK)']"));
-		btnOK.click();
+	
+		String EnvironmentName = prop.getProperty("Env");
+		
+		if (EnvironmentName.equals("IPTSFIL"))
+		{
+			WebElement Environment = driver.findElement(By.id("COMBO1"));
+			Environment.sendKeys(Keys.DOWN);
+			
+			WebElement btnOK = driver.findElement(By.xpath(".//*[@id='(OK)']"));
+			btnOK.click();
+			
+		
+		}
+		
+		if (EnvironmentName.equals("IPTSFILO"))
+		{
+			WebElement Environment = driver.findElement(By.id("COMBO1"));
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			WebElement btnOK = driver.findElement(By.xpath(".//*[@id='(OK)']"));
+			btnOK.click();
+			
+		
+		}
+		if (EnvironmentName.equals("IPTSFILC"))
+		{
+
+			WebElement Environment = driver.findElement(By.id("COMBO1"));
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			WebElement btnOK = driver.findElement(By.xpath(".//*[@id='(OK)']"));
+			btnOK.click();
+			
+		}
+		
+		
+		if (EnvironmentName.equals("IPTSFILI"))
+		{
+
+			WebElement Environment = driver.findElement(By.id("COMBO1"));
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+		    Environment.sendKeys(Keys.DOWN);
+			WebElement btnOK = driver.findElement(By.xpath(".//*[@id='(OK)']"));
+			btnOK.click();
+			
+		}
+		
+		if (EnvironmentName.equals("IPTSFILL"))
+		{
+
+			WebElement Environment = driver.findElement(By.id("COMBO1"));
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+		    Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.click();
+			System.out.println(Environment.getText());
+			WebElement btnOK = driver.findElement(By.xpath(".//*[@id='(OK)']"));
+			btnOK.click();
+			
+		}
+		
+		
+		if (EnvironmentName.equals("IPTSFILM"))
+		{
+
+			WebElement Environment = driver.findElement(By.id("COMBO1"));
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+		    Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+
+			WebElement btnOK = driver.findElement(By.xpath(".//*[@id='(OK)']"));
+			btnOK.click();
+			
+		}
+		
+		
+		if (EnvironmentName.equals("IPTSFILN"))
+		{
+
+			WebElement Environment = driver.findElement(By.id("COMBO1"));
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+		    Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			WebElement btnOK = driver.findElement(By.xpath(".//*[@id='(OK)']"));
+			btnOK.click();
+			
+		}
+		
+		
+		if (EnvironmentName.equals("IPTSFILB"))
+		{
+
+			WebElement Environment = driver.findElement(By.id("COMBO1"));
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+		    Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			WebElement btnOK = driver.findElement(By.xpath(".//*[@id='(OK)']"));
+			btnOK.click();
+			
+		}
+		
+		if (EnvironmentName.equals("IPTSFILW"))
+		{
+
+			WebElement Environment = driver.findElement(By.id("COMBO1"));
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+		    Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			Environment.sendKeys(Keys.DOWN);
+			WebElement btnOK = driver.findElement(By.xpath(".//*[@id='(OK)']"));
+			btnOK.click();
+			
+		}
 		
 	
 	
@@ -251,20 +375,18 @@ public class BaseTest
     {
         extent.flush();
         Email.EmailTrigger();
-      File file = new File(System.getProperty("user.dir") +"/test-output/TestResultReport.html");
-        Date now = new Date();
-		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-		String time = dateFormat.format(now);
-		File dir = new File("./ScreenRecordings/" +time);
-	
-        if(!Desktop.isDesktopSupported()){
-            System.out.println("Desktop is not supported");
-            return;
-        }
-        
-        Desktop desktop = Desktop.getDesktop();
-        if(file.exists()) desktop.open(file);
-        if(dir.exists()) desktop.open(dir); 
+		/*
+		 * File file = new File(System.getProperty("user.dir")
+		 * +"/test-output/TestResultReport.html"); Date now = new Date();
+		 * SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy"); String time
+		 * = dateFormat.format(now); File dir = new File("./ScreenRecordings/" +time);
+		 * 
+		 * if(!Desktop.isDesktopSupported()){
+		 * System.out.println("Desktop is not supported"); return; }
+		 * 
+		 * Desktop desktop = Desktop.getDesktop(); if(file.exists()) desktop.open(file);
+		 * if(dir.exists()) desktop.open(dir);
+		 */
     }
     }
 

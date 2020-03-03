@@ -17,22 +17,23 @@ public class PurchaseOrderEntry extends BaseTest {
 	@JiraPolicy(logTicketReady=true)
 	@Test(priority=1, enabled=true)
 
-	public void poEntry() throws Exception {
+	public void defPurcahseOrderEntry() throws Exception {
 
 		test = extent.createTest("Purchase Order Entry");
+		System.out.println("Value is "+ com.islandpacific.testdata.purchaseorder.InputPOEntry.SKUEntry());
 		driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
 		WebElement menuMerchandise = driver.findElement(By.xpath("//div[@id='LABEL1_0']"));
 		menuMerchandise.click();
 		test.log(Status.PASS, "Merchandise Menu Clicked");
-		Thread.sleep(5000);
-		WebElement menuPoManagement = driver.findElement(By.xpath("//div[@id='LABEL4_5']"));
+		Thread.sleep(2000);
+		WebElement menuPoManagement = driver.findElement(By.xpath("//div[@id='LABEL4_4']"));
 		menuPoManagement.click();
 		test.log(Status.PASS, "Purchase Management Menu Clicked");
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		WebElement menuPOEntry = driver.findElement(By.xpath("//div[@id='LABEL4_0']"));
 		menuPOEntry.click();
 		test.log(Status.PASS, "Purchase Entry Menu Clicked");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		WebElement txtFileGroup = driver.findElement(By.xpath("//input[@id='WFGP']"));
 		txtFileGroup.clear();
 	//	txtFileGroup.sendKeys("700");
@@ -40,6 +41,7 @@ public class PurchaseOrderEntry extends BaseTest {
 		
 		test.log(Status.PASS, "File Group Entered");
 		txtFileGroup.sendKeys(Keys.ENTER);
+
 		WebElement txtBlockOut = driver.findElement(By.xpath("//input[@id='_OBJ_N65865']"));
 		txtBlockOut.clear();
 	//	txtBlockOut.sendKeys("SSR2009194");
@@ -48,39 +50,48 @@ public class PurchaseOrderEntry extends BaseTest {
 		txtBlockOut.sendKeys(Keys.ENTER);
 		WebElement chkbockout = driver.findElement(By.xpath("//div[@id='_OBJ_N65690']"));
 		chkbockout.click();
+
 		driver.findElement(By.xpath("//div[@id='(OK)']")).click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		WebElement txtVendor = driver.findElement(By.xpath("//input[@id='_OBJ_N65873']"));
 		txtVendor.clear();
-		//txtVendor.sendKeys(com.islandpacific.testdata.purchaseorder.InputPOEntry.VendorEntry());
-		txtVendor.sendKeys("055586");
+		txtVendor.sendKeys(com.islandpacific.testdata.purchaseorder.InputPOEntry.VendorEntry());
+		//txtVendor.sendKeys("055586");
 		test.log(Status.PASS, "Vendor Details Entered");
 		txtVendor.sendKeys(Keys.ENTER);
 		WebElement PoTemplateOK = driver.findElement(By.xpath("//input[@id='_OBJ_N65675']"));
 		Actions POTemplate = new Actions(driver);
 		POTemplate.moveToElement(PoTemplateOK).build().perform();
 		PoTemplateOK.sendKeys(Keys.ENTER);
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		WebElement txtDepartment = driver.findElement(By.xpath("//input[@id='_OBJ_N66044']"));
 		txtDepartment.clear();
 		txtDepartment.sendKeys(com.islandpacific.testdata.purchaseorder.InputPOEntry.DepartMentEntry());
 		test.log(Status.PASS, "Department Details Entered");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		WebElement txtShipToStore = driver.findElement(By.xpath("//input[@id='_OBJ_N68285']"));
 		txtShipToStore.clear();
 		txtShipToStore.sendKeys("00586");
 		test.log(Status.PASS, "Shp to Store Entered");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//div[@id='(OK)']")).click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//div[@id='(OK)']")).click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//div[@id='(OK)']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//div[@id='(OK)']")).click();
+		Thread.sleep(1000);
 		/*WebElement btnMode = driver.findElement(By.xpath("//div[@id='_OBJ_N67094']"));
 		btnMode.click();*/
 		WebElement txtSKU = driver.findElement(By.xpath("//input[@id='_OBJ_N66048']"));
 		txtSKU.clear();
-		//txtSKU.sendKeys(com.islandpacific.testdata.purchaseorder.InputPOEntry.SKUEntry());
-		txtSKU.sendKeys("0000115675");
+		
+		//String Sku = String.format("%5d", com.islandpacific.testdata.purchaseorder.InputPOEntry.SKUEntry());
+	//	System.out.println(Sku);
+		txtSKU.sendKeys(com.islandpacific.testdata.purchaseorder.InputPOEntry.SKUEntry());
+	//	txtSKU.sendKeys(Sku);
+	//	txtSKU.sendKeys("0000115675");
 		test.log(Status.PASS, "SKU detauks Entered");
 		driver.findElement(By.xpath("//div[@id='(OK)']")).click();
 		WebElement txtQuantity = driver.findElement(By.xpath("//input[@id='_OBJ_N66275']"));
@@ -101,6 +112,7 @@ public class PurchaseOrderEntry extends BaseTest {
 		Thread.sleep(3000);
 		driver.findElement(By.id("TOOLBAR_SPLITBUTTON1")).sendKeys(Keys.SHIFT,"X") ;
 		test.log(Status.PASS, "Logged off");
+		//driver.close();
 		//Thread.sleep(6000);
 	//	signOff();
 		

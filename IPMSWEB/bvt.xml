@@ -1,0 +1,73 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Legasuite Defination" parallel="false">
+
+	
+	<!--
+	<test name="Define Zones">
+		<classes>
+		
+			<class name="com.islandpacific.definetestcases.DefineZones" />
+		</classes>
+	</test>
+	
+	
+
+	<test name="Define Territories">
+		<classes>
+			<class name="com.islandpacific.definetestcases.DefineTerritories" />
+		</classes>
+	</test>
+	
+	<test name="Define Regions">
+		<classes>
+			<class name="com.islandpacific.definetestcases.DefineRegions" />
+		</classes>
+	</test>
+	
+	 
+	 <test name="Define District">
+		<classes>
+			<class name="com.islandpacific.definetestcases.DefineDistricts" />
+		</classes>
+	</test>
+	
+	
+	 <test name="Define GTIN Prefixes">
+		<classes>
+			<class name="com.islandpacific.definetestcases.DefineGTINPrefixes" />
+		</classes>
+	</test>
+	
+	
+	 <test name="Define Concepts">
+		<classes>
+			<class name="com.islandpacific.definetestcases.DefineConcepts" />
+		</classes>
+	</test>
+	
+	-->
+	
+	 <test name="Purchase Order Entry">
+		<classes>
+			<class name="com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderEntry" />
+		</classes>
+	</test>
+	
+	
+	 <test name="Purchase Order Approval ">
+		<classes>
+			<class name="com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderApproval" />
+		</classes>
+	</test>
+	
+	 <test name="Purchase Order Change">
+		<classes>
+			<class name="com.islandpacific.ipmsweb.test.purchaseordermanagement.PurchaseOrderApproval" />
+		</classes>
+	</test>
+	
+	
+	
+	
+	
+</suite>

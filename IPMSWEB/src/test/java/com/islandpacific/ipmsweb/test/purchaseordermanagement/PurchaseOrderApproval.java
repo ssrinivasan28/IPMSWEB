@@ -13,7 +13,7 @@ import com.islandpacific.ipmsweb.base.BaseTest;
 public class PurchaseOrderApproval extends BaseTest {
 	
 @Test
-public void poApproval() throws Exception
+public void defPurchaseOrderApproval() throws Exception
 {
 	
 	test = extent.createTest("Purchase Order Approval");
@@ -22,7 +22,7 @@ public void poApproval() throws Exception
 	menuMerchandise.click();
 	test.log(Status.PASS, "Merchandise Menu Clicked");
 	Thread.sleep(3000);
-	WebElement menuPoManagement = driver.findElement(By.xpath("//div[@id='LABEL4_5']"));
+	WebElement menuPoManagement = driver.findElement(By.xpath("//div[@id='LABEL4_4']"));
 	menuPoManagement.click();	
 	test.log(Status.PASS, "Purchase Management Menu Clicked");
 	Thread.sleep(5000);
